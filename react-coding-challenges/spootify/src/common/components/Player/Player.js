@@ -17,6 +17,7 @@ const PLAYLISTS = "https://api.spotify.com/v1/me/playlists";
 
 export default function Player() {
 
+  // State pour consommer au data
   const [token, setToken] = useState('');
   const [data, setData] = useState({});
 
