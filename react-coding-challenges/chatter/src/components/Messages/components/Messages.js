@@ -24,9 +24,10 @@ function Messages() {
     setValue(event.target.value);
   };
 
-  const sendMessage = (event) => {
-    event.preventDefault();
-    setValue('')
+  const handleSubmit = (event) => {
+    // event.preventDefault();
+
+    console.log('*****Valeur*******', value);
   };
 
 
@@ -36,7 +37,7 @@ function Messages() {
       <Header />
       <div className="messages__list" id="message-list">
       </div>
-      <Footer message={true} sendMessage={sendMessage} onChangeMessage={onChangeMessage} />
+      <Footer message={true} sendMessage={handleSubmit} onChangeMessage={onChangeMessage} />
     </div>
   );
 }
